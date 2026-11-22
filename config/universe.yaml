@@ -1,0 +1,18 @@
+# Universe: 13 scored AI-infrastructure names plus Anthropic (listed last).
+# status: pending = no tagged 10-Q/10-K financials yet; flips to active automatically
+# once the SEC company-facts API shows a 10-Q or 10-K with revenue.
+companies:
+  - {ticker: MSFT,  name: Microsoft,        cik: 789019,  layer: Hyperscaler,        angle: "Very large capex funded from cash flow"}
+  - {ticker: GOOGL, name: Alphabet,         cik: 1652044, layer: Hyperscaler,        angle: "Rising capex and new bond issuance"}
+  - {ticker: AMZN,  name: Amazon,           cik: 1018724, layer: Hyperscaler,        angle: "Largest capex budget in the group"}
+  - {ticker: META,  name: Meta Platforms,   cik: 1326801, layer: Hyperscaler,        angle: "Bond issuance to fund data centres"}
+  - {ticker: APLD,  name: Applied Digital,  cik: 1144879, layer: AI data centres,    angle: "Small, debt-financed, high leverage"}
+  - {ticker: EQIX,  name: Equinix,          cik: 1101239, layer: Data-centre REIT,   angle: "Steady leveraged benchmark"}
+  - {ticker: NVDA,  name: NVIDIA,           cik: 1045810, layer: Chips,              angle: "Net cash, supplier to everyone"}
+  - {ticker: AMD,   name: AMD,              cik: 2488,    layer: Chips,              angle: "Low debt"}
+  - {ticker: AVGO,  name: Broadcom,         cik: 1730168, layer: Chips / networking, angle: "Acquisition debt being paid down"}
+  - {ticker: MU,    name: Micron,           cik: 723125,  layer: Memory chips,       angle: "Cyclical and capex-heavy"}
+  - {ticker: INTC,  name: Intel,            cik: 50863,   layer: Chips / foundry,    angle: "Weak margins, heavy foundry capex"}
+  - {ticker: DELL,  name: Dell Technologies, cik: 1571996, layer: AI servers,        angle: "Leveraged, thin margins"}
+  - {ticker: VRT,   name: Vertiv,           cik: 1674101, layer: Power and cooling,  angle: "Industrial benefiting from AI demand"}
+  - {ticker: ANT,   name: Anthropic,        cik: 2130357, layer: AI model developer, angle: "New listing, S-1 only", status: pending}

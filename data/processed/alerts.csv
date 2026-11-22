@@ -1,0 +1,31 @@
+ticker,type,severity,period_end,text
+AMD,Status change,medium,2026-09-26,Green to Amber (score 0 to 20): debt growth (year on year) added 15.0 score points (0.0 to 4.0 of 4 risk points); share price drawdown from the one-year high added 4.4 score points (0.2 to 2.0 of 4 risk points)
+AMD,Metric breach (new),medium,2026-09-26,debt growth (year on year) is in the risky range (4.0 of 4 risk points)
+AMD,Trigger,medium,2026-09-26,WATCH: debt more than doubled in a year
+AMZN,Metric breach (new),medium,2026-09-30,capex / operating cash flow is in the risky range (3.1 of 4 risk points)
+AMZN,Trigger,medium,2026-09-30,WATCH: debt more than doubled in a year
+APLD,Trigger,medium,2026-08-31,WATCH: capex is above one and a half times operating cash flow
+APLD,Trigger,medium,2026-08-31,WATCH: debt more than doubled in a year
+DELL,Metric breach (new),medium,2026-07-31,share price drawdown from the one-year high is in the risky range (3.8 of 4 risk points)
+GOOGL,Trigger,medium,2026-09-30,WATCH: debt more than doubled in a year
+INTC,Metric breach (new),medium,2026-09-26,share price drawdown from the one-year high is in the risky range (4.0 of 4 risk points)
+META,Metric breach (new),medium,2026-09-30,operating margin change (year on year) is in the risky range (4.0 of 4 risk points)
+META,Trigger,medium,2026-09-30,WATCH: debt more than doubled in a year
+MU,Metric breach (new),medium,2026-09-03,share price drawdown from the one-year high is in the risky range (3.6 of 4 risk points)
+NVDA,Status change,medium,2026-07-26,Green to Amber (score 0 to 23): debt growth (year on year) added 15.0 score points (0.0 to 4.0 of 4 risk points); share price drawdown from the one-year high added 8.1 score points (0.0 to 3.3 of 4 risk points)
+NVDA,Metric breach (new),medium,2026-07-26,debt growth (year on year) is in the risky range (4.0 of 4 risk points)
+NVDA,Metric breach (new),medium,2026-07-26,share price drawdown from the one-year high is in the risky range (3.3 of 4 risk points)
+NVDA,Trigger,medium,2026-07-26,WATCH: debt more than doubled in a year
+VRT,Metric breach (new),medium,2026-09-30,share price drawdown from the one-year high is in the risky range (4.0 of 4 risk points)
+AMZN,Metric breach (standing),info,2026-09-30,free cash flow / debt is in the risky range (4.0 of 4 risk points)
+AMZN,Metric breach (standing),info,2026-09-30,debt growth (year on year) is in the risky range (4.0 of 4 risk points)
+APLD,Metric breach (standing),info,2026-08-31,net debt / operating cash flow is in the risky range (4.0 of 4 risk points)
+APLD,Metric breach (standing),info,2026-08-31,capex / operating cash flow is in the risky range (4.0 of 4 risk points)
+APLD,Metric breach (standing),info,2026-08-31,free cash flow / debt is in the risky range (4.0 of 4 risk points)
+APLD,Metric breach (standing),info,2026-08-31,debt growth (year on year) is in the risky range (4.0 of 4 risk points)
+APLD,Metric breach (standing),info,2026-08-31,share price drawdown from the one-year high is in the risky range (4.0 of 4 risk points)
+EQIX,Metric breach (standing),info,2026-09-30,net debt / operating cash flow is in the risky range (3.6 of 4 risk points)
+EQIX,Metric breach (standing),info,2026-09-30,capex / operating cash flow is in the risky range (3.6 of 4 risk points)
+EQIX,Metric breach (standing),info,2026-09-30,free cash flow / debt is in the risky range (4.0 of 4 risk points)
+GOOGL,Metric breach (standing),info,2026-09-30,debt growth (year on year) is in the risky range (4.0 of 4 risk points)
+META,Metric breach (standing),info,2026-09-30,debt growth (year on year) is in the risky range (4.0 of 4 risk points)

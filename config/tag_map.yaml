@@ -1,0 +1,17 @@
+# Concept -> ordered candidate us-gaap tags. For every period the first tag that has
+# data wins, so a company that switches tags over time is still covered.
+duration:            # flows: trailing-twelve-month (TTM) values
+  revenue: [Revenues, RevenueFromContractWithCustomerExcludingAssessedTax, RevenueFromContractWithCustomerIncludingAssessedTax, SalesRevenueNet]
+  opinc:   [OperatingIncomeLoss]
+  cfo:     [NetCashProvidedByUsedInOperatingActivities]
+  capex:   [PaymentsToAcquirePropertyPlantAndEquipment, PaymentsToAcquireProductiveAssets, PaymentsToAcquireOtherPropertyPlantAndEquipment]
+instant:             # balances at the period end
+  cash:                [CashAndCashEquivalentsAtCarryingValue, CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents]
+  sti:                 [ShortTermInvestments, MarketableSecuritiesCurrent, AvailableForSaleSecuritiesDebtSecuritiesCurrent, DebtSecuritiesCurrent]
+  current_assets:      [AssetsCurrent]
+  current_liabilities: [LiabilitiesCurrent]
+debt:                # total debt = (noncurrent + current) if noncurrent is tagged, else the total tag; plus short-term
+  noncurrent: [LongTermDebtNoncurrent, LongTermNotesPayable, LongTermDebtAndCapitalLeaseObligations]
+  current:    [LongTermDebtCurrent, DebtCurrent, NotesPayableCurrent, LongTermDebtAndCapitalLeaseObligationsCurrent]
+  total:      [LongTermDebt, DebtAndCapitalLeaseObligations]
+  short_term: [CommercialPaper, ShortTermBorrowings]
