@@ -39,6 +39,14 @@ python -m pytest -q tests
 The dashboard has a **Refresh data** button at the top. It runs `python run.py --refresh` (downloads the latest filings and prices, rebuilds everything) and the header shows when that last finished (`output/last_run.json`, UTC).
 
 Set `SEC_USER_AGENT` to a descriptive string with your contact details before using `--refresh` (SEC fair-access policy). The repo ships processed results (`data/processed`, `output/`), so the dashboard works straight after cloning; only the large raw SEC cache is git-ignored.
+## Setup 
+Copy this code in the terminal : 
+cd $HOME
+git clone https://github.com/Novapranay/Credit-monitoring-using-LLM-based-systems.git
+cd Credit-monitoring-using-LLM-based-systems
+python -m pip install -r requirements.txt
+python run.py
+python -m streamlit run app.py
 
 ## Daily refresh (GitHub Actions)
 
