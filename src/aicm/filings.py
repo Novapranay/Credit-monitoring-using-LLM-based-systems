@@ -9,7 +9,7 @@ import requests
 
 from .paths import RAW
 
-UA = os.getenv("SEC_USER_AGENT", "AIMonitor/0.1 educational-demo (set SEC_USER_AGENT to your contact)")
+UA = os.getenv("SEC_USER_AGENT") or "AIMonitor/0.1 educational-demo (set SEC_USER_AGENT to your contact)"
 URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json"
 
 

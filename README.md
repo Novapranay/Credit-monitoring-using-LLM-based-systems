@@ -40,6 +40,14 @@ The dashboard has a **Refresh data** button at the top. It runs `python run.py -
 
 Set `SEC_USER_AGENT` to a descriptive string with your contact details before using `--refresh` (SEC fair-access policy). The repo ships processed results (`data/processed`, `output/`), so the dashboard works straight after cloning; only the large raw SEC cache is git-ignored.
 
+## Daily refresh (GitHub Actions)
+
+`.github/workflows/daily-refresh.yml` runs `python run.py --refresh --require-prices` and the tests at **05:00 IST (23:30 UTC) Tuesday to Saturday**, which is after the US market close, so each run picks up the previous US trading day. If anything changed it commits `data/processed` and `output` to `main`; the dashboard's "Last updated" stamp comes from `output/last_run.json`, so the daily commit always carries at least that file.
+
+What actually moves: prices change every trading day, so the drawdown metric and the scores that use it move daily. The other six metrics come from filings, so they only change when a company files a 10-Q or 10-K (about four times a year each), which is when the status can change materially.
+
+One-time setup: add a repository **variable** named `SEC_USER_AGENT` (Settings, Secrets and variables, Actions, Variables) such as `AI Credit Monitor your-name your-email`; the SEC requires automated clients to identify themselves, and the job stops with a clear error if it is missing. The job also stops, without committing, if the SEC download fails, data QA fails, or any company has no prices, so a Yahoo outage never overwrites good data. A failed run shows in the Actions tab and GitHub emails the repository owner. You can also start a run from the Actions tab with **Run workflow**.
+
 ## How it works: eleven agents, one orchestrator
 
 Each agent has one job and writes a file, so any stage can be rerun and inspected. Every agent except the Writer is deterministic code.

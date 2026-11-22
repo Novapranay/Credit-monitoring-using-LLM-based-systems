@@ -36,7 +36,7 @@ def fetch_prices(ticker: str, force: bool = False) -> pd.Series | None:
         except (requests.RequestException, KeyError, TypeError, IndexError):
             pass
         time.sleep(1.5 * (attempt + 1))
-    return None
+    return load_prices(ticker)  # download failed: keep the last good cached prices, if any
 
 
 def load_prices(ticker: str) -> pd.Series | None:

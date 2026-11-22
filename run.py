@@ -44,6 +44,7 @@ def gate(name: str, ok: bool, detail: str = ""):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--refresh", action="store_true", help="re-download SEC facts and prices")
+    ap.add_argument("--require-prices", action="store_true", help="stop if any active company has no price data (used by the scheduled job)")
     args = ap.parse_args()
     t0 = time.time()
     cfg = load_config()
@@ -62,6 +63,8 @@ def main():
         if prices[c["ticker"]] is None:
             no_price.append(c["ticker"])
     step("market", with_prices=len(companies) - len(no_price), without=",".join(no_price) or "none")
+    if args.require_prices:
+        gate("all active companies have price data", not [c["ticker"] for c in active if c["ticker"] in no_price], ",".join(no_price))
     gate("all active companies have SEC data", not [c["ticker"] for c in active if c["ticker"] in errors], str(errors))
 
     # Stage 2: normalise and check
