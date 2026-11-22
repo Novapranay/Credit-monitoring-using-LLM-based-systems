@@ -220,6 +220,8 @@ streamlit run app.py     # open the dashboard
 python -m pytest -q tests
 ```
 
+The dashboard also has a **Refresh data** button at the top that does the same as `python run.py --refresh`, and its header shows the time of the last run in UTC (read from `output/last_run.json`).
+
 Before using `--refresh`, set the `SEC_USER_AGENT` environment variable to a descriptive string with your contact details, as the SEC's fair-access policy requires. To use the optional LLM writer, set `AICM_USE_LLM=1` and `ANTHROPIC_API_KEY` and install the `anthropic` package.
 
 ### Repository layout

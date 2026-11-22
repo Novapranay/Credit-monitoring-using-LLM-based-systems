@@ -1,7 +1,9 @@
 """AI Leaders Credit Monitor: Streamlit dashboard. Run `python run.py` first, then `streamlit run app.py`."""
 from __future__ import annotations
 
+import datetime as dt
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -55,6 +57,41 @@ button[role="tab"] p {font-size: 1.02rem; font-weight: 600;}
 """,
     unsafe_allow_html=True,
 )
+
+
+def run_pipeline() -> tuple[bool, str]:
+    """Re-download SEC filings and prices and rebuild every output (python run.py --refresh)."""
+    try:
+        done = subprocess.run([sys.executable, str(ROOT / "run.py"), "--refresh"], cwd=ROOT, capture_output=True, text=True, timeout=1200)
+    except subprocess.TimeoutExpired:
+        return False, "The refresh took longer than 20 minutes and was stopped. Scores on screen are from the previous run."
+    if done.returncode == 0:
+        return True, "Data refreshed from SEC filings and prices."
+    tail = (done.stderr or done.stdout).strip().splitlines()[-3:]
+    return False, "The refresh did not finish, so scores on screen are from the previous run. " + " ".join(tail)
+
+
+def read_last_run() -> dict:
+    p = OUT / "last_run.json"
+    try:
+        return json.loads(p.read_text())
+    except (OSError, ValueError):
+        return {}
+
+
+# ---------------------------------------------------------------- header and refresh
+head_left, head_right = st.columns([5, 1.3], vertical_alignment="top")
+with head_right:
+    st.write("")
+    clicked = st.button("🔄 Refresh data", width="stretch", help="Download the latest SEC filings and prices, then rebuild all scores and notes. Takes a few minutes.")
+if clicked:
+    with st.spinner("Refreshing from SEC and Yahoo Finance and rebuilding scores. This takes a few minutes."):
+        ok, msg = run_pipeline()
+    st.session_state["refresh_result"] = (ok, msg)
+    st.rerun()
+result = st.session_state.pop("refresh_result", None)
+if result:
+    (st.success if result[0] else st.error)(result[1])
 
 if not (OUT / "watchlist.csv").exists():
     st.error("No results yet. Run `python run.py` first.")
@@ -113,14 +150,24 @@ def fmt_threshold(m: str, v: float) -> str:
     return "no fall" if v == 0 else f"{v * 100:.1f} pts"
 
 
-# ---------------------------------------------------------------- header
-st.markdown(
-    "<div class='hero'><h1>AI Leaders Credit Monitor</h1>"
-    "<p>Is the AI buildout being paid for by cash flow, or increasingly by borrowed money? "
-    "A lender's view of 13 public AI companies, built from SEC filings and market prices.</p>"
-    f"<span class='asof'>Newest filing in the data: {latest_filing:%d %b %Y} &nbsp;·&nbsp; fundamentals change when a company files, prices daily &nbsp;·&nbsp; not investment advice</span></div>",
-    unsafe_allow_html=True,
-)
+# ---------------------------------------------------------------- header text
+last = read_last_run()
+if last.get("finished_at_utc"):
+    stamp = dt.datetime.fromisoformat(last["finished_at_utc"]).astimezone(dt.timezone.utc)
+    how = "downloaded fresh data" if last.get("downloaded_fresh_data") else "rebuilt from cached data"
+    updated = f"Last updated: <b>{stamp:%d %b %Y, %H:%M} UTC</b> ({how})"
+else:
+    updated = "Last updated: unknown (run <code>python run.py</code>)"
+with head_left:
+    st.markdown(
+        "<div class='hero'><h1>AI Leaders Credit Monitor</h1>"
+        "<p>Is the AI buildout being paid for by cash flow, or increasingly by borrowed money? "
+        "A lender's view of 13 public AI companies, built from SEC filings and market prices.</p>"
+        f"<span class='asof'>{updated} &nbsp;·&nbsp; newest filing: {latest_filing:%d %b %Y}"
+        + (f" &nbsp;·&nbsp; latest price: {last['latest_price_date']}" if last.get("latest_price_date") else "")
+        + " &nbsp;·&nbsp; not investment advice</span></div>",
+        unsafe_allow_html=True,
+    )
 st.write("")
 tab_watch, tab_co, tab_bubble, tab_method = st.tabs(["Watchlist", "Company", "AI-bubble lens", "Method and QA"])
 
