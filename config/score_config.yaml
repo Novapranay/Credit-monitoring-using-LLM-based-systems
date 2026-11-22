@@ -1,0 +1,18 @@
+# Judgment-based scorecard. bands = [t0, t1, t2, t3, t4]: t0 earns 0 risk points, t4 earns 4,
+# linear in between. The order of the bands gives the direction (rising = higher is worse).
+weights: {net_debt_to_cfo: 25, capex_to_cfo: 20, fcf_to_debt: 15, debt_growth_yoy: 15, current_ratio: 10, op_margin_change_yoy: 5, drawdown: 10}
+bands:
+  net_debt_to_cfo:      [1.0, 2.0, 3.0, 4.0, 5.0]        # years of operating cash flow to repay net debt
+  capex_to_cfo:         [0.60, 0.80, 1.00, 1.25, 1.50]   # capex / operating cash flow
+  fcf_to_debt:          [0.40, 0.30, 0.20, 0.10, 0.0]    # free cash flow / debt
+  debt_growth_yoy:      [0.10, 0.25, 0.50, 0.75, 1.00]
+  current_ratio:        [1.5, 1.25, 1.0, 0.9, 0.8]
+  op_margin_change_yoy: [0.0, -0.02, -0.05, -0.075, -0.10]
+  drawdown:             [0.15, 0.25, 0.35, 0.45, 0.55]
+status: {green_below: 30, red_above: 55}
+min_weight_available: 0.60
+triggers:
+  hard_red:   {cfo_nonpositive_with_debt: true}
+  watch_amber: {capex_to_cfo_above: 1.5, debt_growth_above: 1.0}
+alert_points: 3.0
+history_from: "2022-06-01"
