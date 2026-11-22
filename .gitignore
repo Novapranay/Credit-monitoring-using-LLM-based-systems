@@ -5,3 +5,4 @@ __pycache__/
 data/raw/
 data/llm_cache/
 .env
+output/run_log.json
