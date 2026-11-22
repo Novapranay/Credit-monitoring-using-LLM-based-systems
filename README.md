@@ -5,6 +5,12 @@ A credit-style monitor for 13 public AI-infrastructure companies, built from SEC
 
 Demonstration on public data. Not investment advice.
 
+## What is this, in simple words?
+
+Big tech companies are spending huge amounts of money building AI data centres and chips. This project checks **who is paying for that spending: the companies' own cash, or borrowed money**, the way a bank would before lending to them.
+
+The program downloads each company's official public reports and share prices, works out a few simple health numbers, and gives every company a score from 0 to 100 and a traffic light: **Green** (steady), **Amber** (keep an eye on it) or **Red** (worth a closer look). It also writes a short plain-English note for each company, and a second program checks that no number in the note is wrong. A web page (the dashboard) shows everything, and the data refreshes itself every weekday.
+
 Full write-up: [docs/PROJECT_REPORT.md](docs/PROJECT_REPORT.md) (purpose, universe, data, scoring, architecture, verification, results, limits, next steps).
 
 ![Watchlist](docs/img/watchlist.png)
@@ -27,26 +33,44 @@ The watchlist also shows where each score comes from: one cell per company and m
 
 ![Risk heatmap](docs/img/heatmap.png)
 
-## Run it
+## Setup on your computer
+
+You need **Git** and **Python 3.10 or newer** installed. On Windows, open **PowerShell** (not Command Prompt) from the Start menu. On Mac or Linux, open **Terminal**.
+
+> **Windows:** do not run these commands from `C:\Windows\system32`. If your window starts there (this happens when PowerShell is opened as administrator), the first command below moves you to your home folder, which is the right place.
+
+Copy and paste these commands one after another:
 
 ```bash
-pip install -r requirements.txt
-python run.py            # uses cached SEC data and prices; add --refresh to re-download
-streamlit run app.py     # dashboard
-python -m pytest -q tests
-```
-
-The dashboard has a **Refresh data** button at the top. It runs `python run.py --refresh` (downloads the latest filings and prices, rebuilds everything) and the header shows when that last finished (`output/last_run.json`, UTC).
-
-Set `SEC_USER_AGENT` to a descriptive string with your contact details before using `--refresh` (SEC fair-access policy). The repo ships processed results (`data/processed`, `output/`), so the dashboard works straight after cloning; only the large raw SEC cache is git-ignored.
-## Setup 
-Copy this code in the terminal : 
 cd $HOME
 git clone https://github.com/Novapranay/Credit-monitoring-using-LLM-based-systems.git
 cd Credit-monitoring-using-LLM-based-systems
 python -m pip install -r requirements.txt
 python run.py
 python -m streamlit run app.py
+```
+
+What each step does:
+
+1. `cd $HOME` goes to your home folder.
+2. `git clone ...` downloads the project.
+3. `cd Credit-monitoring-using-LLM-based-systems` goes into the project folder.
+4. `python -m pip install -r requirements.txt` installs the Python libraries it needs.
+5. `python run.py` rebuilds all scores and notes from the saved data (a few seconds).
+6. `python -m streamlit run app.py` starts the dashboard. Your browser opens it, usually at http://localhost:8501. Press `Ctrl+C` in the terminal to stop it.
+
+The project already includes its latest results, so the dashboard works even if you skip step 5. To get newer data later, run `git pull` inside the project folder and start the dashboard again.
+
+## Other commands
+
+```bash
+python run.py --refresh     # re-download the latest SEC filings and prices, then rebuild everything
+python -m pytest -q tests   # run the automatic tests
+```
+
+The dashboard has a **Refresh data** button at the top. It runs `python run.py --refresh` (downloads the latest filings and prices, rebuilds everything) and the header shows when that last finished (`output/last_run.json`, UTC).
+
+Set `SEC_USER_AGENT` to a descriptive string with your contact details before using `--refresh` (SEC fair-access policy). The repo ships processed results (`data/processed`, `output/`), so the dashboard works straight after cloning; only the large raw SEC cache is git-ignored. On Windows PowerShell set it with `$env:SEC_USER_AGENT = "AI Credit Monitor your-name your-email"`; on Mac or Linux use `export SEC_USER_AGENT="..."`.
 
 ## Daily refresh (GitHub Actions)
 
