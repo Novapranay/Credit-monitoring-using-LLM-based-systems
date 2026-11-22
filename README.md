@@ -5,6 +5,8 @@ A credit-style monitor for 13 public AI-infrastructure companies, built from SEC
 
 Demonstration on public data. Not investment advice.
 
+Full write-up: [docs/PROJECT_REPORT.md](docs/PROJECT_REPORT.md) (purpose, universe, data, scoring, architecture, verification, results, limits, next steps).
+
 ![Watchlist](docs/img/watchlist.png)
 
 ## What it shows today
@@ -20,6 +22,10 @@ Read these as screening results from a judgment-based scorecard, not as verdicts
 | Company view | AI-bubble lens |
 | --- | --- |
 | ![Company](docs/img/company.png) | ![Lens](docs/img/bubble_lens.png) |
+
+The watchlist also shows where each score comes from: one cell per company and metric, coloured by risk points, with the actual value printed in the cell.
+
+![Risk heatmap](docs/img/heatmap.png)
 
 ## Run it
 
