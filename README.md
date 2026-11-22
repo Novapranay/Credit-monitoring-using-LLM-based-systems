@@ -5,6 +5,8 @@ A credit-style monitor for 13 public AI-infrastructure companies, built from SEC
 
 Demonstration on public data. Not investment advice.
 
+Full write-up: [docs/PROJECT_REPORT.md](docs/PROJECT_REPORT.md) (purpose, universe, data, scoring, architecture, verification, results, limits, next steps).
+
 ![Watchlist](docs/img/watchlist.png)
 
 ## What it shows today
@@ -21,6 +23,10 @@ Read these as screening results from a judgment-based scorecard, not as verdicts
 | --- | --- |
 | ![Company](docs/img/company.png) | ![Lens](docs/img/bubble_lens.png) |
 
+The watchlist also shows where each score comes from: one cell per company and metric, coloured by risk points, with the actual value printed in the cell.
+
+![Risk heatmap](docs/img/heatmap.png)
+
 ## Run it
 
 ```bash
@@ -29,6 +35,8 @@ python run.py            # uses cached SEC data and prices; add --refresh to re-
 streamlit run app.py     # dashboard
 python -m pytest -q tests
 ```
+
+The dashboard has a **Refresh data** button at the top. It runs `python run.py --refresh` (downloads the latest filings and prices, rebuilds everything) and the header shows when that last finished (`output/last_run.json`, UTC).
 
 Set `SEC_USER_AGENT` to a descriptive string with your contact details before using `--refresh` (SEC fair-access policy). The repo ships processed results (`data/processed`, `output/`), so the dashboard works straight after cloning; only the large raw SEC cache is git-ignored.
 

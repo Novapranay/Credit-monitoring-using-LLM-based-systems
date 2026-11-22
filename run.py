@@ -108,6 +108,15 @@ def main():
     publisher.publish(companies, metrics, scores, alert_df, lens, summary, watch, notes_md)
     step("publisher", watchlist=len(watch), seconds=round(time.time() - t0, 1))
     (OUTPUT / "run_log.json").write_text(json.dumps(log, indent=2))
+    # Small committed marker the dashboard shows as "Last updated".
+    price_dates = [d for d in metrics["price_date"].dropna().unique()] if "price_date" in metrics else []
+    (OUTPUT / "last_run.json").write_text(json.dumps({
+        "finished_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
+        "downloaded_fresh_data": bool(args.refresh),
+        "newest_filing": str(newest),
+        "latest_price_date": str(max(price_dates)) if price_dates else None,
+        "seconds": round(time.time() - t0, 1),
+    }, indent=2) + "\n")
 
 
 if __name__ == "__main__":
