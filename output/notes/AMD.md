@@ -1,16 +1,16 @@
 # AMD (AMD): credit note
 
-**AMD is stretched in places: risk score 20 out of 100.**
+**AMD is stretched in places: risk score 19 out of 100.**
 
 *Period ended 26 Sep 2026. Status: Amber.*
 
 ## What changed
 
-Its risk score rose by 19 points from the prior quarter, to 20 out of 100 for the period ended 26 Sep 2026. Its status moved from Green to Amber; the largest driver was debt growth (year on year).
+Its risk score rose by 18 points from the prior quarter, to 19 out of 100 for the period ended 26 Sep 2026. Its status moved from Green to Amber; the largest driver was debt growth (year on year).
 
 ## Key numbers explained
 
-Cash and short-term investments exceed debt, so the company is in a net cash position. Capital spending absorbs 23% of operating cash flow; a figure above full coverage means the buildout is funded from reserves or new borrowing. Free cash flow is 100% of total debt. Debt rose by 120% over the past year. The current ratio is 2.72x, a gauge of short-term liquidity. Operating margin rose by 8.9 percentage points year on year. The share price sits 35% below its one-year high.
+Cash and short-term investments exceed debt, so the company is in a net cash position. Capital spending absorbs 23% of operating cash flow; a figure above full coverage means the buildout is funded from reserves or new borrowing. Free cash flow is 100% of total debt. Debt rose by 120% over the past year. The current ratio is 2.72x, a gauge of short-term liquidity. Operating margin rose by 8.9 percentage points year on year. The share price sits 30% below its one-year high.
 
 ## Risks
 

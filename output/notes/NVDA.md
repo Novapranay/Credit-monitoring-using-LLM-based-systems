@@ -1,20 +1,20 @@
 # NVIDIA (NVDA): credit note
 
-**NVIDIA is stretched in places: risk score 23 out of 100.**
+**NVIDIA is stretched in places: risk score 19 out of 100.**
 
 *Period ended 26 Jul 2026. Status: Amber.*
 
 ## What changed
 
-Its risk score rose by 23 points from the prior quarter, to 23 out of 100 for the period ended 26 Jul 2026. Its status moved from Green to Amber; the largest driver was debt growth (year on year).
+Its risk score rose by 19 points from the prior quarter, to 19 out of 100 for the period ended 26 Jul 2026. Its status moved from Green to Amber; the largest driver was debt growth (year on year).
 
 ## Key numbers explained
 
-Cash and short-term investments exceed debt, so the company is in a net cash position. Capital spending absorbs 5% of operating cash flow; a figure above full coverage means the buildout is funded from reserves or new borrowing. Free cash flow is 381% of total debt. Debt rose by 294% over the past year. The current ratio is 4.59x, a gauge of short-term liquidity. Operating margin rose by 7.1 percentage points year on year. The share price sits 48% below its one-year high.
+Cash and short-term investments exceed debt, so the company is in a net cash position. Capital spending absorbs 5% of operating cash flow; a figure above full coverage means the buildout is funded from reserves or new borrowing. Free cash flow is 381% of total debt. Debt rose by 294% over the past year. The current ratio is 4.59x, a gauge of short-term liquidity. Operating margin rose by 7.1 percentage points year on year. The share price sits 31% below its one-year high.
 
 ## Risks
 
-The weakest readings are debt growth (year on year); share price drawdown from the one-year high. Active triggers: debt more than doubled in a year. Reported debt excludes off-balance-sheet financing such as data-centre joint ventures, so leverage may be understated.
+The weakest readings are debt growth (year on year). Active triggers: debt more than doubled in a year. Reported debt excludes off-balance-sheet financing such as data-centre joint ventures, so leverage may be understated.
 
 ## What to watch
 
