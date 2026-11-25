@@ -10,7 +10,7 @@ Its risk score rose by 7 points from the prior quarter, to 26 out of 100 for the
 
 ## Key numbers explained
 
-Cash and short-term investments exceed debt, so the company is in a net cash position. Capital spending absorbs 89% of operating cash flow; a figure above full coverage means the buildout is funded from reserves or new borrowing. Free cash flow is 16% of total debt. Debt rose by 374% over the past year. The current ratio is 2.79x, a gauge of short-term liquidity. Operating margin rose by 1.1 percentage points year on year. The share price sits 30% below its one-year high.
+Cash and short-term investments exceed debt, so the company is in a net cash position. Capital spending absorbs 89% of operating cash flow; a figure above full coverage means the buildout is funded from reserves or new borrowing. Free cash flow is 16% of total debt. Debt rose by 374% over the past year. The current ratio is 2.79x, a gauge of short-term liquidity. Operating margin rose by 1.1 percentage points year on year. The share price sits 31% below its one-year high.
 
 ## Risks
 
