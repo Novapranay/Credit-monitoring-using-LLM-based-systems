@@ -1,16 +1,16 @@
 # Broadcom (AVGO): credit note
 
-**Broadcom is on solid footing: risk score 6 out of 100.**
+**Broadcom is on solid footing: risk score 5 out of 100.**
 
 *Period ended 2 Aug 2026. Status: Green.*
 
 ## What changed
 
-Its risk score rose by 2 points from the prior quarter, to 6 out of 100 for the period ended 2 Aug 2026. Its status is unchanged at Green.
+Its risk score rose by 2 points from the prior quarter, to 5 out of 100 for the period ended 2 Aug 2026. Its status is unchanged at Green.
 
 ## Key numbers explained
 
-Net debt equals 0.9 years of operating cash flow, a measure of how long operations would take to repay borrowings. Capital spending absorbs 3% of operating cash flow; a figure above full coverage means the buildout is funded from reserves or new borrowing. Free cash flow is 66% of total debt. Debt fell by 7% over the past year. The current ratio is 2.50x, a gauge of short-term liquidity. Operating margin rose by 10.3 percentage points year on year. The share price sits 38% below its one-year high.
+Net debt equals 0.9 years of operating cash flow, a measure of how long operations would take to repay borrowings. Capital spending absorbs 3% of operating cash flow; a figure above full coverage means the buildout is funded from reserves or new borrowing. Free cash flow is 66% of total debt. Debt fell by 7% over the past year. The current ratio is 2.50x, a gauge of short-term liquidity. Operating margin rose by 10.3 percentage points year on year. The share price sits 35% below its one-year high.
 
 ## Risks
 

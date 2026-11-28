@@ -10,7 +10,7 @@ Its risk score rose by 4 points from the prior quarter, to 28 out of 100 for the
 
 ## Key numbers explained
 
-Net debt equals 0.0 years of operating cash flow, a measure of how long operations would take to repay borrowings. Capital spending absorbs 78% of operating cash flow; a figure above full coverage means the buildout is funded from reserves or new borrowing. Free cash flow is 34% of total debt. Debt rose by 190% over the past year. The current ratio is 1.90x, a gauge of short-term liquidity. Operating margin fell by 10.4 percentage points year on year. The share price sits 22% below its one-year high.
+Net debt equals 0.0 years of operating cash flow, a measure of how long operations would take to repay borrowings. Capital spending absorbs 78% of operating cash flow; a figure above full coverage means the buildout is funded from reserves or new borrowing. Free cash flow is 34% of total debt. Debt rose by 190% over the past year. The current ratio is 1.90x, a gauge of short-term liquidity. Operating margin fell by 10.4 percentage points year on year. The share price sits 19% below its one-year high.
 
 ## Risks
 

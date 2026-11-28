@@ -34,7 +34,7 @@ score,status,watch_level,weight_available,triggers,pts_net_debt_to_cfo,pts_capex
 15.0,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.0,0.0,4.0,0.0,0.03856930953883564,0.0,GOOGL,2025-12-31,2026-02-05
 15.8,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.15234036695669134,0.0,4.0,0.0,0.0,0.0,GOOGL,2026-03-31,2026-04-30
 19.4,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.5654234549616264,0.0,4.0,0.0,0.0,0.609433056126816,GOOGL,2026-06-30,2026-07-23
-26.5,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,1.4501005285406374,0.0,4.0,0.0,0.0,1.7169288804440401,GOOGL,2026-09-30,2026-10-29
+26.4,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,1.4501005285406374,0.0,4.0,0.0,0.0,1.6707318367273931,GOOGL,2026-09-30,2026-10-29
 48.6,Amber,keep an eye on,1.0,WATCH: capex is above one and a half times operating cash flow,0.0,4.0,4.0,0.8690631257654996,2.472161435872579,1.5121740669801982,0.9218818080000148,AMZN,2022-06-30,2022-07-29
 54.1,Amber,keep an eye on,1.0,WATCH: capex is above one and a half times operating cash flow,0.0,4.0,4.0,1.0350406424444225,2.6340702321836957,1.5316276214798803,2.6930103911956875,AMZN,2022-09-30,2022-10-28
 52.2,Amber,keep an eye on,1.0,,0.0,3.4453285420944555,4.0,1.5856673633920577,2.553564188863076,1.3041505199009078,2.3936303399677796,AMZN,2022-12-31,2023-02-03
@@ -69,7 +69,7 @@ score,status,watch_level,weight_available,triggers,pts_net_debt_to_cfo,pts_capex
 15.5,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.009110535405872363,0.0,4.0,0.0,0.36909012223043103,0.0,META,2025-12-31,2026-01-29
 18.2,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.054314516129032576,0.0,4.0,0.0,0.8529867311991152,0.7543041374109973,META,2026-03-31,2026-04-30
 24.3,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.4276406167258882,0.0,4.0,0.0,2.374882324853167,1.6768350721914564,META,2026-06-30,2026-07-30
-28.4,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.9236739876922614,0.5759122255554625,4.0,0.0,4.0,0.6566636198409184,META,2026-09-30,2026-10-22
+27.8,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.9236739876922614,0.5759122255554625,4.0,0.0,4.0,0.41141861070240343,META,2026-09-30,2026-10-22
 47.8,Amber,keep an eye on,0.8,WATCH: capex is above one and a half times operating cash flow,0.0,4.0,0.0,,3.2918404668461174,,4.0,APLD,2022-08-31,2022-10-12
 68.8,Red,worth a closer look,0.8,WATCH: capex is above one and a half times operating cash flow,0.0,4.0,4.0,,4.0,,4.0,APLD,2022-11-30,2023-01-10
 66.7,Red,worth a closer look,0.8,WATCH: capex is above one and a half times operating cash flow,0.0,4.0,4.0,,4.0,,3.3559672195066814,APLD,2023-02-28,2023-04-06
@@ -111,7 +111,7 @@ score,status,watch_level,weight_available,triggers,pts_net_debt_to_cfo,pts_capex
 2.0,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.0,1.6225627720718223,0.0,NVDA,2025-10-26,2025-11-19
 1.3,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.0,1.0119477360949163,0.0,NVDA,2026-01-25,2026-02-25
 0.0,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,NVDA,2026-04-26,2026-05-20
-20.6,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.0,0.0,4.0,0.0,0.0,2.259404797538184,NVDA,2026-07-26,2026-08-26
+20.5,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.0,0.0,4.0,0.0,0.0,2.2096638506194948,NVDA,2026-07-26,2026-08-26
 22.4,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.0,0.0,4.0,0.0,0.9985329915687319,2.441696367162401,AMD,2022-06-25,2022-08-03
 29.4,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.0,0.0,4.0,0.0,3.518492204681896,4.0,AMD,2022-09-24,2022-11-02
 25.3,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.0,0.0,4.0,0.0,4.0,2.113588537227166,AMD,2022-12-31,2023-02-27
@@ -129,7 +129,7 @@ score,status,watch_level,weight_available,triggers,pts_net_debt_to_cfo,pts_capex
 17.3,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.0,0.0,4.0,0.0,0.0,0.926511837064087,AMD,2025-12-27,2026-02-04
 0.0,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,AMD,2026-03-28,2026-05-06
 0.5,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.2018124997307627,AMD,2026-06-27,2026-08-05
-20.6,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.0,0.0,4.0,0.0,0.0,2.2478055886144648,AMD,2026-09-26,2026-11-04
+19.9,Amber,keep an eye on,1.0,WATCH: debt more than doubled in a year,0.0,0.0,0.0,4.0,0.0,0.0,1.9627818712554972,AMD,2026-09-26,2026-11-04
 9.5,Green,steady,1.0,,0.9912068306359119,0.0,0.28786960001940465,0.0,0.0,0.0,0.9077534959288516,AVGO,2022-07-31,2022-09-08
 4.5,Green,steady,1.0,,0.6169933078393881,0.0,0.0,0.0,0.0,0.0,0.2555023957552019,AVGO,2022-10-30,2022-12-16
 3.4,Green,steady,1.0,,0.5386439893555479,0.0,0.0,0.0,0.0,0.0,0.0,AVGO,2023-01-29,2023-03-08
@@ -146,7 +146,7 @@ score,status,watch_level,weight_available,triggers,pts_net_debt_to_cfo,pts_capex
 6.1,Green,steady,1.0,,0.7778988270327196,0.0,0.0,0.0,0.0,0.0,0.5120104630429303,AVGO,2025-11-02,2025-12-18
 5.2,Green,steady,1.0,,0.7478439563401158,0.0,0.0,0.0,0.0,0.0,0.22893899521592959,AVGO,2026-02-01,2026-03-11
 3.1,Green,steady,1.0,,0.3467075129379573,0.0,0.0,0.0,0.0,0.0,0.3566356355725822,AVGO,2026-05-03,2026-06-09
-5.6,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,2.2525182055408313,AVGO,2026-08-02,2026-09-10
+5.0,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,2.0141310383226045,AVGO,2026-08-02,2026-09-10
 9.6,Green,steady,1.0,,0.0,0.4239272632129774,0.0,0.0,0.0,0.0,2.9895232960614115,MU,2022-06-02,2022-07-01
 12.5,Green,steady,1.0,,0.0,0.9743758645675512,0.0,0.0,0.0,0.0,3.065530041524406,MU,2022-09-01,2022-10-07
 24.8,Green,steady,1.0,,0.0,1.616363039553586,0.0,1.847336941042438,0.0,0.9514653301226667,3.422966311082761,MU,2022-12-01,2022-12-22
@@ -164,7 +164,7 @@ score,status,watch_level,weight_available,triggers,pts_net_debt_to_cfo,pts_capex
 5.0,Green,steady,1.0,,0.0,0.9749691521240963,0.042871725076556996,0.0,0.0,0.0,0.0,MU,2025-11-27,2025-12-18
 1.6,Green,steady,1.0,,0.0,0.32300264248197585,0.0,0.0,0.0,0.0,0.0,MU,2026-02-26,2026-03-19
 0.0,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,MU,2026-05-28,2026-06-25
-8.9,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,3.5455686495094696,MU,2026-09-03,2026-10-09
+7.9,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,3.1689905651912733,MU,2026-09-03,2026-10-09
 34.0,Amber,keep an eye on,1.0,,0.0,2.082157749977819,4.0,0.0,0.0,2.8494816525413857,2.005633791381295,INTC,2022-07-02,2022-07-29
 49.8,Amber,keep an eye on,1.0,WATCH: capex is above one and a half times operating cash flow,0.24114720515071708,4.0,4.0,0.0,0.0,4.0,3.3005723888103757,INTC,2022-10-01,2022-10-28
 47.8,Amber,keep an eye on,1.0,WATCH: capex is above one and a half times operating cash flow,0.0,4.0,4.0,0.01677996203074239,0.0,4.0,3.110526344992898,INTC,2022-12-31,2023-01-27
@@ -199,7 +199,7 @@ score,status,watch_level,weight_available,triggers,pts_net_debt_to_cfo,pts_capex
 35.2,Amber,keep an eye on,1.0,,2.0543968432919955,0.0,2.5760010242294276,0.9908080888817841,3.467653812653417,0.0,0.11693370163700673,DELL,2025-10-31,2025-12-09
 21.2,Green,steady,1.0,,0.7858739383102369,0.0,1.285337904326572,1.1293198192697522,2.895699315620604,0.0,0.0,DELL,2026-01-30,2026-03-16
 14.3,Green,steady,1.0,,0.5704089815557338,0.0,0.9699303616700363,0.0,2.5350009383629586,0.0,0.3065927165314755,DELL,2026-05-01,2026-06-09
-28.3,Green,steady,1.0,,0.8842165898617511,0.0,1.5163929669819534,0.6757758490478348,2.3770474176552807,0.0,3.451393860759769,DELL,2026-07-31,2026-09-08
+27.5,Green,steady,1.0,,0.8842165898617511,0.0,1.5163929669819534,0.6757758490478348,2.3770474176552807,0.0,3.113188676008102,DELL,2026-07-31,2026-09-08
 81.1,Red,worth a closer look,0.95,HARD: operating cash flow is not positive while debt is outstanding,4.0,4.0,4.0,1.8886505642077775,0.0,,4.0,VRT,2022-06-30,2022-08-03
 79.7,Red,worth a closer look,0.95,HARD: operating cash flow is not positive while debt is outstanding,4.0,4.0,4.0,2.0973740771890474,0.0,,3.1524662566437347,VRT,2022-09-30,2022-10-31
 60.8,Red,worth a closer look,1.0,HARD: operating cash flow is not positive while debt is outstanding,4.0,4.0,4.0,0.0,0.0,0.637412224551857,0.0,VRT,2022-12-31,2023-02-27
@@ -217,4 +217,4 @@ score,status,watch_level,weight_available,triggers,pts_net_debt_to_cfo,pts_capex
 0.0,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,VRT,2025-12-31,2026-02-13
 0.1,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.022608174876478593,0.0,0.0,VRT,2026-03-31,2026-04-22
 7.6,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.4857655667541074,0.0,2.5717118046641443,VRT,2026-06-30,2026-07-29
-10.8,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.43291583914036735,0.0,3.8919147847169575,VRT,2026-09-30,2026-10-28
+10.5,Green,steady,1.0,,0.0,0.0,0.0,0.0,0.43291583914036735,0.0,3.7499800256401836,VRT,2026-09-30,2026-10-28

@@ -6,11 +6,11 @@
 
 ## What changed
 
-Its risk score rose by 14 points from the prior quarter, to 28 out of 100 for the period ended 31 Jul 2026. Its status is unchanged at Green.
+Its risk score rose by 13 points from the prior quarter, to 28 out of 100 for the period ended 31 Jul 2026. Its status is unchanged at Green.
 
 ## Key numbers explained
 
-Net debt equals 1.9 years of operating cash flow, a measure of how long operations would take to repay borrowings. Capital spending absorbs 30% of operating cash flow; a figure above full coverage means the buildout is funded from reserves or new borrowing. Free cash flow is 25% of total debt. Debt rose by 20% over the past year. The current ratio is 0.96x, a gauge of short-term liquidity. Operating margin rose by 2.7 percentage points year on year. The share price sits 50% below its one-year high.
+Net debt equals 1.9 years of operating cash flow, a measure of how long operations would take to repay borrowings. Capital spending absorbs 30% of operating cash flow; a figure above full coverage means the buildout is funded from reserves or new borrowing. Free cash flow is 25% of total debt. Debt rose by 20% over the past year. The current ratio is 0.96x, a gauge of short-term liquidity. Operating margin rose by 2.7 percentage points year on year. The share price sits 46% below its one-year high.
 
 ## Risks
 
